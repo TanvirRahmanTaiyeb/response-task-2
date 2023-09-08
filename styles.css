@@ -1,0 +1,191 @@
+/* some default styles for better consistency */
+body, h1, h2, h3, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Improved logo style */
+.logo {
+    width: 120px; /* Adjust the width as needed */
+    height: auto;
+    display: block; /* Center the logo */
+    margin: 0 auto;
+}
+
+#app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.modal-overlay {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1000;
+}
+
+.modal h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.search-bar {
+    margin-bottom: 1rem;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.recipe-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.recipe-card {
+    flex: 1 1 calc(33.33% - 1rem);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1000;
+    text-align: center; /* Center align the content */
+    overflow: hidden; /* Ensure consistent card size */
+}
+
+.recipe-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.recipe-image {
+    max-width: 100%; /* Make sure the image doesn't exceed the card width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    object-fit: cover; /* Crop and scale images to cover the card */
+    max-height: 200px; /* Set a fixed maximum height for images */
+}
+
+.recipe-actions {
+    margin-top: 1rem;
+}
+
+.recipe-actions button {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.recipe-actions button:last-child {
+    margin-right: 0;
+}
+
+.user-actions {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.user-actions button {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.user-actions button:last-child {
+    margin-right: 0;
+}
+
+.comments {
+    margin-top: 1rem;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+}
+
+.comments h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.add-comment {
+    margin-top: 1rem;
+}
+
+.add-comment h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.add-comment form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.add-comment textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.add-comment input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.add-comment button {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
